@@ -3,9 +3,9 @@ using System.IO;
 
 namespace PII_Game_Of_Life
 {
-    public class Class1
+    public class GameLogic
     {
-    public static bool[,] procesarGeneracion( bool[,] gameBoard)
+    public static bool[,] processGeneration( bool[,] gameBoard)
     {    
 
         int boardWidth = gameBoard.GetLength(0);
@@ -55,8 +55,6 @@ namespace PII_Game_Of_Life
                 }
             }
         }
-        //gameBoard = cloneboard;
-        //cloneboard = new bool[boardWidth, boardHeight];
         return cloneboard;
         }
     }

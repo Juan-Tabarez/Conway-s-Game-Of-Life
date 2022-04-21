@@ -6,9 +6,9 @@ using System.Threading;
 
 namespace PII_Game_Of_Life
 {
-    public class Imprimir
+    public class Print
     {
-        public static void imprimirTablero(bool[,] b)
+        public static void printGameboard(bool[,] b)
         {
             //bool[,] b =  Leer.leerArchivo(); //variable que representa el tablero
             int width = b.GetLength(0); //variabe que representa el ancho del tablero
@@ -37,7 +37,7 @@ namespace PII_Game_Of_Life
                 //=================================================
                 //Invocar método para calcular siguiente generación
                 //=================================================
-                b = Class1.procesarGeneracion(b);
+                b = GameLogic.processGeneration(b);
                 Thread.Sleep(300);
             }
         }    

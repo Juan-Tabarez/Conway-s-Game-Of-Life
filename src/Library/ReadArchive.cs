@@ -3,9 +3,9 @@ using System.IO;
 
 namespace PII_Game_Of_Life
 {
-    public class Leer
+    public class ReadArchive
     {    
-        public static bool[,] leerArchivo(string url)
+        public static bool[,] readArchive(string url)
         {
             
             string content = File.ReadAllText(url);

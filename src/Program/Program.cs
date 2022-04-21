@@ -6,15 +6,9 @@ namespace PII_Game_Of_Life
     {
         static void Main(string[] args)
         {   
-            var hola = new bool[3,3] {
-                {true, false, false},
-                {false, true, true},
-                {true, true, false}
-            };
-
-            bool[,] tablero = Leer.leerArchivo(@"../../assets/board.txt");
+            bool[,] tablero = ReadArchive.readArchive(@"../../assets/board.txt");
             
-            Imprimir.imprimirTablero(tablero);
+            Print.printGameboard(tablero);
 
         }
     }
